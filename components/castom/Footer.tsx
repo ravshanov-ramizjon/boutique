@@ -14,34 +14,66 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Меню</h3>
           <ul className="space-y-2">
-            <li><Link href="/">Главная</Link></li>
-            <li><Link href="#about">О нас</Link></li>
-            <li><Link href="#services">Услуги</Link></li>
-            <li><Link href="#contact">Контакты</Link></li>
+            <li><Link href="/" className="hover:text-pink-600">Главная</Link></li>
+            <li><Link href="#about" className="hover:text-pink-600">О нас</Link></li>
+            <li><Link href="#services" className="hover:text-pink-600">Почему мы</Link></li>
+            <li><Link href="#contact" className="hover:text-pink-600">Контакты</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold mb-3">Контакты</h3>
           <ul className="space-y-2">
-            <li>Телефон: +998 90 123 45 67</li>
-            <li>Email: info@kamolaboutique.uz</li>
-            <li>Адрес: г. Ташкент, Улица Мода, 10</li>
+            <li>Телефон:
+              <Link
+                href="tel:+998901234567"
+                className="hover:text-pink-600"
+                type="tel"
+              >
+                +998 90 123 45 67
+              </Link>
+            </li>
+            <li>Email:
+              <Link
+                href="mailto:kamolaboutique@gmail.com"
+                className="hover:text-pink-600"
+                type="email"
+              >
+                kamolaboutique@gmail.com
+              </Link>
+            </li>
+            <li>Адрес: 
+              <Link
+              href="https://yandex.uz/maps/-/CHvWvGo8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-600 cursor-pointer"
+              >
+              г. Ташкент, Улица Мода, 10
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold mb-3">Соцсети</h3>
           <ul className="space-y-2">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Telegram</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="#" className="hover:text-pink-600">Instagram</a></li>
+            <li><a href="#" className="hover:text-pink-600">Telegram</a></li>
+            <li><a href="#" className="hover:text-pink-600">Facebook</a></li>
           </ul>
         </div>
       </div>
 
       <div className="border-t text-center py-4 text-xs text-gray-500">
-        © {new Date().getFullYear()} Kamola Boutique. Все права защищены.
+        <p>
+          <Link
+            href="/"
+            className="hover:text-pink-600 text-sm transition duration-200"
+          >
+            Создано Web Site Development
+          </Link>
+        </p>
       </div>
     </footer>
   )
