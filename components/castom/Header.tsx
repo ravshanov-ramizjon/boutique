@@ -30,7 +30,9 @@ export default function Header() {
           <Link href="/" className="hover:text-pink-600 hover:underline">Главная</Link>
           <Link href="#about" className="hover:text-pink-600 hover:underline">О нас</Link>
           <Link href="#services" className="hover:text-pink-600 hover:underline">Почему мы</Link>
-          <Link href="#contact" className="hover:text-pink-600 hover:underline">Контакты</Link>
+          <button
+            onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+            className="hover:text-pink-600 hover:underline">Контакты</button>
         </nav>
 
         <div className="md:hidden">
@@ -47,7 +49,14 @@ export default function Header() {
             <Link href="/" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Главная</Link>
             <Link href="#about" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>О нас</Link>
             <Link href="#services" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Услуги</Link>
-            <Link href="#contact" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Контакты</Link>
+            <button className="hover:text-pink-600" onClick={() => {
+              window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+              setMenuOpen(false);
+              
+            }
+            }>
+              Контакты
+            </button>
           </nav>
         </SheetContent>
       </Sheet>
