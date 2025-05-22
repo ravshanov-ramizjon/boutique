@@ -65,7 +65,7 @@ export default function Footer() {
       <div className="border-t text-center py-4 text-xs text-gray-500">
         <p>
           <Link
-            href="/"
+            href="https://web-site-development.netlify.app/"
             className="hover:text-pink-600 text-sm transition duration-200"
           >
             Создано Web Site Development
