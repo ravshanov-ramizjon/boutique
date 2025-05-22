@@ -6,7 +6,6 @@ import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
-
 export const metadata: Metadata = {
   title: 'Kamola Boutique | Элегантность и стиль',
   description: 'Kamola Boutique — это сочетание изысканности, женственности и модных тенденций. Мы предлагаем только лучшее для наших клиенток.',
@@ -24,26 +23,27 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: 'Kamola Boutique | Элегантность и стиль',
-    description: 'Kamola Boutique — модный бутик в Самарканде для стильных женщин.',
+    description: 'Изысканная женская одежда в Самарканде. Камола Бутик — мода, которая вдохновляет.',
     url: 'https://kamolaboutique.uz',
     siteName: 'Kamola Boutique',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.jpg', // обязательно
         width: 1200,
         height: 630,
-        alt: 'Kamola Boutique Logo',
+        alt: 'Kamola Boutique – логотип и стиль',
       },
     ],
     locale: 'ru_RU',
     type: 'website',
   },
-
   robots: {
     index: true,
     follow: true,
   },
 }
+
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
