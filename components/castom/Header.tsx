@@ -20,7 +20,7 @@ export default function Header() {
         >
           {/* Logo Kamola Byutik */}
           <Image
-            src="/logo_byutiqe.png"
+            src="/logobyutiqe.png"
             alt="Kamola Byutik Logo"
             width={1000}
             height={20}
