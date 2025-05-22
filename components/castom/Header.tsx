@@ -19,7 +19,7 @@ export default function Header() {
           className="text-2xl font-bold text-pink-600 flex"
         >
           {/* Logo Kamola Byutik */}
-          <Image
+          <img
             src="/logo_byutiqe.png"
             alt="Kamola Byutik Logo"
             width={1000}
