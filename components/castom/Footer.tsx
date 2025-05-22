@@ -25,7 +25,6 @@ export default function Footer() {
             </li>
             <li><Link href="#about" className="hover:text-pink-600">О нас</Link></li>
             <li><Link href="#services" className="hover:text-pink-600">Почему мы</Link></li>
-            <li><Link href="#contact" className="hover:text-pink-600">Контакты</Link></li>
           </ul>
         </div>
 
@@ -38,10 +37,6 @@ export default function Footer() {
                 <Link href="tel:+998915380345" className="hover:text-pink-600">+998(91)5380345</Link>
                 <Link href="tel:+998887220171" className="hover:text-pink-600">+998(88)7220171</Link>
               </div>
-            </li>
-            <li className="flex items-start gap-2">
-              Email:
-              <Link href="mailto:kamolaboutique@gmail.com" className="hover:text-pink-600">kamolaboutique@gmail.com</Link>
             </li>
             <li className="flex items-start gap-2">
               Адрес:

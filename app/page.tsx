@@ -133,7 +133,7 @@ export default function Home() {
               }
             }}
             modules={[Pagination, Navigation, Autoplay]}
-            className="mySwiper h-[200px] sm:h-[200px] md:h-[200px] lg:h-[300px] w-full rounded-2xl shadow-lg"
+            className="mySwiper h-[350px] sm:h-[300px] md:h-[300px] lg:h-[300px] w-full rounded-2xl shadow-lg"
           >
             {images.map((image, index) => (
               <SwiperSlide key={index}>

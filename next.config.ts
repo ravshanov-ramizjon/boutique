@@ -1,10 +1,12 @@
 // next.config.js
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ['images.unsplash.com'],
-  },
+const nextConfig: import('next').NextConfig = {
+  // images: {
+  //   remotePatterns: [
+    
+  //   ],
+  // },
   eslint: {
     ignoreDuringBuilds: true,
   },

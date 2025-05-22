@@ -6,6 +6,8 @@ import Link from "next/link"
 import { useState } from "react"
 import { Sheet, SheetContent } from "@/components/ui/sheet" // Используем Sheet для мобильного меню
 import Image from "next/image"
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
+import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -45,14 +47,21 @@ export default function Header() {
       {/* Mobile Menu with Sheet from ShadCN UI */}
       <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
         <SheetContent side="top" className="p-6 flex flex-col gap-4 text-lg text-gray-700">
+
+          <VisuallyHidden>
+              <DialogTitle>Меню</DialogTitle>
+            <DialogDescription>Это мобильное меню для удобства навигации</DialogDescription>
+
+          </VisuallyHidden>
+
           <nav className="flex flex-col gap-4">
             <Link href="/" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Главная</Link>
             <Link href="#about" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>О нас</Link>
-            <Link href="#services" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Услуги</Link>
-            <button className="hover:text-pink-600" onClick={() => {
+            <Link href="#services" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Почему мы</Link>
+            <button className="text-start hover:text-pink-600" onClick={() => {
               window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
               setMenuOpen(false);
-              
+
             }
             }>
               Контакты
