@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Kamola Boutique Team', url: 'https://kamolaboutique.uz' }],
   creator: 'Kamola Boutique',
 
+  other: {
+    'google-site-verification': 'x43P9N4U5DHLBhmSjIXNT1BHQovQGXVAzP_Jfq1-IeI',
+    'yandex-verification': 'f70ebfd4500a65a4',
+  },
+
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
@@ -42,8 +47,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 }
-
-
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
