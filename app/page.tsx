@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Карусель фотографий бутика */}
-      <section id="gallery" className="py-20">
+      <section id="gallery" className="py-10">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold mb-10 text-gray-800 text-center">Фотографии бутика</h2>
 
@@ -133,7 +133,7 @@ export default function Home() {
               }
             }}
             modules={[Pagination, Navigation, Autoplay]}
-            className="mySwiper h-[350px] sm:h-[300px] md:h-[300px] lg:h-[300px] w-full rounded-2xl shadow-lg"
+            className="mySwiper h-full w-full rounded-2xl"
           >
             {images.map((image, index) => (
               <SwiperSlide key={index}>
@@ -141,8 +141,8 @@ export default function Home() {
                   src={image}
                   alt={`Фото бутика ${index + 1}`}
                   width={500}
-                  height={500}
-                  className="rounded-xl shadow-lg w-full h-full object-cover"
+                  height={800}
+                  className="rounded-xl shadow-black shadow-sm w-full h-full object-cover"
                 />
               </SwiperSlide>
             ))}

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'Kamola Boutique',
     images: [
       {
-        url: '/og-image.jpg', // обязательно
+        url: '/og-image.png', // обязательно
         width: 1200,
         height: 630,
         alt: 'Kamola Boutique – логотип и стиль',
