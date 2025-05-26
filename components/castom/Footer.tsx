@@ -52,7 +52,7 @@ export default function Footer() {
             <li className="flex items-start gap-2">
               Орентир:
               <Link
-                href="https://yandex.uz/maps/-/CHCOv8~E"
+                href="https://yandex.uz/maps/-/CHvWvGo8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-pink-600 cursor-pointer"
