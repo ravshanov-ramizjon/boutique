@@ -49,6 +49,17 @@ export default function Footer() {
                 улица Хусейна Байкара, Gulbog', Самарканд
               </Link>
             </li>
+            <li className="flex items-start gap-2">
+              Орентир:
+              <Link
+                href="https://yandex.uz/maps/-/CHCOv8~E"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-600 cursor-pointer"
+              >
+                Напротив кафе CHEHRA (сельский)
+              </Link>
+            </li>
           </ul>
         </div>
 

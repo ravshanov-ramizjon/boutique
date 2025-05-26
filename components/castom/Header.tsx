@@ -29,7 +29,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
-          <Link href="/" className="hover:text-pink-600 hover:underline">Главная</Link>
+          {/* <Link href="/" className="hover:text-pink-600 hover:underline">Главная</Link> */}
           <Link href="#about" className="hover:text-pink-600 hover:underline">О нас</Link>
           <Link href="#services" className="hover:text-pink-600 hover:underline">Почему мы</Link>
           <button
@@ -46,7 +46,7 @@ export default function Header() {
 
       {/* Mobile Menu with Sheet from ShadCN UI */}
       <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
-        <SheetContent side="top" className="p-6 flex flex-col gap-4 text-lg text-gray-700">
+        <SheetContent side="top" className="p-6 mt-26 flex flex-col gap-4 text-lg text-gray-700">
 
           <VisuallyHidden>
               <DialogTitle>Меню</DialogTitle>
@@ -55,7 +55,7 @@ export default function Header() {
           </VisuallyHidden>
 
           <nav className="flex flex-col gap-4">
-            <Link href="/" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Главная</Link>
+            {/* <Link href="/" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Главная</Link> */}
             <Link href="#about" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>О нас</Link>
             <Link href="#services" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Почему мы</Link>
             <button className="text-start hover:text-pink-600" onClick={() => {
