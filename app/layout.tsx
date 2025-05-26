@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'элегантная одежда самарканде'
   ],
 
-  metadataBase: new URL('https://www.kamolaboutique.uz'),
+  metadataBase: new URL('https://www.kamolaboutique.uz', 'https://kamolaboutique.uz'),
 
   authors: [{ name: 'Kamola Boutique Team', url: 'https://www.kamolaboutique.uz' }],
   creator: 'Kamola Boutique',
